@@ -1,52 +1,25 @@
 # GLMGA-model
-Many catastrophic loss data are known to be heavy-tailed with extreme value.
-In this article, a new family of probability distributions with domain in $\mathbb{R}^+$ is
-introduced.
-This class can be considered as a natural extension of the generalized logMoyal distribution.
-This new family is obtained through the mixture of generalized logMoyal distribution with gamma distribution, suitable for modelling heavy tailed data. We also show some important features such as expressions of probability density function, moments, etc. Statistical inference of the model parameters is discussed using the method of maximum likelihood estimation. Parametric regression modelling is also discussed assuming that the response variable follows the generalized logMoyal-gamma distribution.
-A Chinese earthquake loss data-set is used to show the applicability of the new class of distributions.
+Catastrophic loss data are known to be heavy-tailed. Practitioners then need models that are able to capture both tail and modal parts of claim data. To this purpose, a new parametric family of loss distributions  is proposed as a gamma mixture of the generalized log-Moyal distribution from \cite{bhati2018generalized}, termed the generalized log-Moyal gamma distribution (GLMGA). We discuss the probabilistic characteristics of the GLMGA, and statistical estimation of the parameters through maximum likelihood. While the GLMGA distribution is a special case of the GB2 distribution, we show that this simpler model is effective in regression modelling of large and modal loss data. A fire claim data set reported in Cummins et al. (1990) and a Chinese earthquake loss data set are used to illustrate the applicability of the proposed model.
+
+
+
+The data and R code that was used to analyse the data can be obtained below:
+
+- [definition of generalized log-Moyal distribution]([https://github.com/lizhengxiao/GLMGA-model/blob/master/0.%20definition%20of%20logmoyal%20distribution.r](https://github.com/lizhengxiao/GLMGA-model/blob/master/0. definition of logmoyal distribution.r)) in Bhati and Ravi (2018)
+- [definition of generalized log-Moyal gamma distribution]([https://github.com/lizhengxiao/GLMGA-model/blob/master/0.%20definition%20of%20logmoyal-gamma%20distribution.r](https://github.com/lizhengxiao/GLMGA-model/blob/master/0. definition of logmoyal-gamma distribution.r)) in this study
+- simulation 
+- Case I: fire claim data
+- Case II:
+
+
+
+
 
 ```r
 
-# 1. pdf
-dGlogM <- function(y, sigma, tau, log = FALSE) {
-  if( log == FALSE){
-    exp(0.5*log(tau) - 0.5*log(2*pi) - log(sigma) - (1/(2*sigma) + 1)*log(y) - tau/2*(1/y)^(1/sigma))
-  } else if (log == TRUE){
-    0.5*log(tau) - 0.5*log(2*pi) - log(sigma) - (1/(2*sigma) + 1)*log(y) - tau/2*(1/y)^(1/sigma)
-  }
-}
-dGlogM(c(0.5,0.1), sigma = 2, tau = 1, log = FALSE)
+```
 
-# 2. cdf
-pGlogM <- function(y, sigma, tau) {
-  mu <- tau^sigma
-  z <- 1/sqrt(2)*(mu/y)^(1/(2*sigma))
-  p <- pracma::erfc(z)
-  p
-}
-pGlogM(c(0.5,0.1), sigma = 2, tau = 1)
-
-# 3. qf - quantile function
-qGlogM <- function(u, sigma, tau) {
-  mu <- tau^sigma
-  mu*(sqrt(2)*pracma::erfcinv(u))^(-2*sigma)
-}
-qGlogM(c(0.5,0.1), sigma = 2, tau = 1)
-
-
-# 4. generating random 
-rGlogM <- function(n, sigma, tau) {
-  u <- runif(n, min = 0, max = 1)
-  r <- qGlogM(u, sigma = sigma, tau = tau)
-  r
-}
-rGlogM(1000, sigma = 2, tau = 1)
-
-
-
-
-
+```
 
 
 ```
