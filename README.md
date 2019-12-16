@@ -4,14 +4,14 @@ Catastrophic loss data are known to be heavy-tailed. Practitioners then need mod
 
 
 The data and R code that was used to analyse the data can be obtained below:
--
-- definition of generalized log-Moyal distribution in Bhati and Ravi (2018)
 
-- definition of generalized log-Moyal gamma distribution in this study
+- [Definition of generalized log-Moyal distribution in Bhati and Ravi (2018)](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/0.%20definition%20of%20logmoyal%20distribution.r)
 
-- [simulation]()
-- [Case I: fire claim data](https://github.com/lizhengxiao/GLMGA-model/blob/master/Case I - Fire claim data - MLE.r)
-- [Case II: Earthquake loss data](https://github.com/lizhengxiao/GLMGA-model/blob/master/Case%20II%20-%20Earth%20loss.r](https://github.com/lizhengxiao/GLMGA-model/blob/master/Case II - Earth loss.r)
+- [Definition of generalized log-Moyal gamma distribution in this study](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/0.%20definition%20of%20logmoyal-gamma%20distribution.r)
+
+- [Simulation](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/simulations.r)
+- [Case I: fire claim data](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/Case%20I%20-%20Fire%20claim%20data.r)
+- [Case II: Earthquake loss data](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/Case%20II%20-%20Earthquake%20loss%20data.r)
 
 
 
