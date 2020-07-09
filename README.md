@@ -9,13 +9,20 @@ The data and R code that was used to analyse the data can be obtained below:
 
 - [Definition of generalized log-Moyal distribution in Bhati and Ravi (2018)](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/0.%20definition%20of%20logmoyal%20distribution.r)]
 
-- [Definition of generalized log-Moyal gamma distribution](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/0.%20definition%20of%20logmoyal-gamma%20distribution.r)
+- [Definition of generalized log-Moyal gamma distribution (GLMGA)](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/0.%20definition%20of%20logmoyal-gamma%20distribution.r)
 
-- [Part I: Introduction](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/Part-I-Introduction-to-GLMGA.html)
-- [Part II: Simulation](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/simulations.r)
-- [Case I: Fire claim data](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/Case%20I%20-%20Fire%20claim%20data.r)
-- [Case II: Norwegian fire data](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/Case%20I%20-%20Fire%20claim%20data.r)
-- [Case III: Regression model for Earthquake loss data](https://github.com/lizhengxiao/GLMGA-model/blob/master/R%20code/Case%20II%20-%20Earthquake%20loss%20data.r)
+- [Part I: Introduction](https://lizhengxiao.github.io/GLMGA-model/R%20code/Part-I-Introduction-to-GLMGA.html)
+
+- [Part II: Simulation](https://lizhengxiao.github.io/GLMGA-model/R%20code/Part-II-Simuation-study.html)
+
+- [Case I: Fire claim data](https://lizhengxiao.github.io/GLMGA-model/R%20code/Part-III-GLMGA-distribution-fire-claim.html)
+
+- Case II: Norwegian fire data
+	- [Year 1992](https://lizhengxiao.github.io/GLMGA-model/R%20code/Part-III-GLMGA-distribution-norwegian-1992.html)
+	- [Year 1991](https://lizhengxiao.github.io/GLMGA-model/R%20code/Part-III-GLMGA-distribution-norwegian-1991.html)
+	- [Year 1990](https://lizhengxiao.github.io/GLMGA-model/R%20code/Part-III-GLMGA-distribution-norwegian-1990.html)
+
+- [Case III: Regression model for Earthquake loss data](https://lizhengxiao.github.io/GLMGA-model/R%20code/Part-III-GLMGA-regression-model.html)
 
 
 
