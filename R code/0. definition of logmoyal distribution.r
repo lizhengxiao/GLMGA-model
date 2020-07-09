@@ -9,7 +9,6 @@ dGlogM <- function(y, sigma, tau, log = FALSE) {
   }
 }
 dGlogM(c(0.5,0.1), sigma = 2, tau = 1, log = FALSE)
-
 # ========================================================
 # 2. cdf
 # ========================================================
@@ -20,7 +19,6 @@ pGlogM <- function(y, sigma, tau) {
   p
 }
 pGlogM(c(0.5,0.1), sigma = 2, tau = 1)
-
 # ========================================================
 # 3. qf - quantile function
 # ========================================================
@@ -29,8 +27,6 @@ qGlogM <- function(u, sigma, tau) {
   mu*(sqrt(2)*pracma::erfcinv(u))^(-2*sigma)
 }
 qGlogM(c(0.5,0.1), sigma = 2, tau = 1)
-
-
 # ========================================================
 # 4. generating random 
 # ========================================================
@@ -39,8 +35,5 @@ rGlogM <- function(n, sigma, tau) {
   r <- qGlogM(u, sigma = sigma, tau = tau)
   r
 }
-rGlogM(1000, sigma = 2, tau = 1)
-
-
-
+rGlogM(10, sigma = 2, tau = 1)
 
